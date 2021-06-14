@@ -1,4 +1,6 @@
-/* Common Styles */
+/* ---------------------- */
+/* Common styles */
+/* ---------------------- */
 :root {
   --primary-color: #2b81e4;
   --secondary-color: #eee;
@@ -27,4 +29,150 @@ html {
   justify-content: center;
   align-items: center;
 }
+
 /* End of Common Styles */
+
+/* ---------------------- */
+/* Animations */
+/* ---------------------- */
+
+@keyframes drop-letters {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(-100%);
+  }
+
+  20% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes img-float {
+  0% {
+    transform: translateZ(40rem);
+    opacity: 1;
+  }
+
+  40% {
+    transform: translateZ(-500rem) translateX(150rem);
+    opacity: 0.8;
+  }
+
+  70% {
+    transform: translateZ(-1500rem) translateX(800rem);
+    opacity: 0.6;
+  }
+
+  80% {
+    transform: translateZ(-50rem) translateX(100rem);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateZ(40rem);
+    opacity: 1;
+  }
+}
+/* End of Animations */
+
+/* ---------------------- */
+/* Container styles */
+/* ---------------------- */
+.container {
+  margin: 3.5rem;
+  box-shadow: 0 1rem 3rem var(--grey-color);
+  background-color: var(--secondary-color);
+  overflow: hidden;
+}
+
+/* ---------------------- */
+/* Header */
+/* ---------------------- */
+.header {
+  width: 100%;
+  height: calc(100vh - 7rem);
+  background: linear-gradient(rgba(18, 113, 255, 0.5), rgba(18, 113, 255, 0.3)),
+    url(images/header-bg.jpg) center no-repeat;
+
+  background-size: cover;
+  position: relative;
+  perspective: 100rem;
+}
+
+.header__text {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 5px var(--grey-color);
+}
+.heading {
+  font-size: 8rem;
+  color: var(--white-color);
+}
+
+.header__paragraph {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  max-width: 70rem;
+  margin: auto;
+}
+
+.logo {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+}
+
+.logo h2 {
+  display: flex;
+}
+
+.logo h2 span {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  text-transform: uppercase;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.logo h2 span:nth-child(1) {
+  animation: drop-letters 5s 0.1s infinite;
+}
+.logo h2 span:nth-child(2) {
+  animation: drop-letters 5s 0.2s infinite;
+}
+.logo h2 span:nth-child(3) {
+  animation: drop-letters 5s 0.3s infinite;
+}
+.logo h2 span:nth-child(4) {
+  animation: drop-letters 5s 0.4s infinite;
+}
+.logo h2 span:nth-child(5) {
+  animation: drop-letters 5s 0.5s infinite;
+}
+.logo h2 span:nth-child(6) {
+  animation: drop-letters 5s 0.6s infinite;
+}
+.logo h2 span:nth-child(7) {
+  animation: drop-letters 5s 0.7s infinite;
+}
+
+.header__img {
+  width: 35%;
+  animation: img-float 150s infinite;
+}
+/* End of Header  */
