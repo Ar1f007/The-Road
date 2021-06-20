@@ -9,7 +9,7 @@ const container = document.querySelector(".container");
 const openNavbarIcon = document.querySelector(".open-navbar-icon");
 const closeNavbarIcon = document.querySelector(".close-navbar-icon");
 
-// Navigation for card
+// Navigation for cards
 navigationBtns.forEach((btn) =>
   btn.addEventListener("click", () =>
     btn.parentElement.parentElement.classList.toggle("change")
