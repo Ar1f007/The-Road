@@ -514,7 +514,9 @@ html {
 }
 /* End of Stories section */
 
+/* ---------------------- */
 /* Contact section  */
+/* ---------------------- */
 .contact {
   padding: 15rem 0 20rem 0;
   text-align: center;
@@ -615,7 +617,9 @@ html {
 }
 /* End of Contact section  */
 
+/* ---------------------- */
 /* Footer section */
+/* ---------------------- */
 .footer {
   background-color: var(--grey-color);
   padding: 4rem 0 2rem 0;
@@ -648,5 +652,133 @@ html {
   letter-spacing: 0.2rem;
   margin-top: 5rem;
 }
-
 /* End of Footer section  */
+
+/* ---------------------- */
+/* Responsive  */
+/* ---------------------- */
+@media screen and (max-width: 75em) {
+  .cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin: 3rem 0;
+  }
+
+  .story-bg {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 62.5em) {
+  .navbar__list {
+    flex-direction: column;
+  }
+
+  .navbar__link {
+    flex-grow: 1;
+  }
+
+  .header__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+
+  .heading {
+    font-size: 6rem;
+  }
+
+  .header__paragraph {
+    font-size: 2.5rem;
+  }
+
+  .popular-tours-heading {
+    font-size: 6rem;
+  }
+
+  .story-bg {
+    transform: skewX(0);
+  }
+
+  .story {
+    transform: skewX(0);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .story__img {
+    margin-bottom: 3rem;
+  }
+
+  .footer__link {
+    padding: 0.3rem 2rem;
+    margin: 0.1rem;
+  }
+}
+
+@media screen and (max-width: 50em) {
+  .header__paragraph {
+    display: none;
+  }
+
+  .popular-tours-heading {
+    font-size: 5rem;
+  }
+
+  .contact__form {
+    width: 90%;
+  }
+
+  .footer__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__link {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 41em) {
+  .container {
+    margin: 0;
+  }
+
+  .open-navbar-icon {
+    top: 2.5rem;
+    left: 2.5rem;
+  }
+
+  .navbar-wrapper {
+    padding: 0;
+  }
+
+  .close-navbar-icon {
+    right: 4rem;
+  }
+
+  .header {
+    height: 100vh;
+  }
+
+  .contact__heading {
+    font-size: 6rem;
+  }
+
+  .contact__form {
+    padding: 2rem;
+    height: 40rem;
+  }
+}
+
+@media screen and (max-width: 31.25em) {
+  html {
+    font-size: 45%;
+  }
+}
+/* End of Responsive  */
